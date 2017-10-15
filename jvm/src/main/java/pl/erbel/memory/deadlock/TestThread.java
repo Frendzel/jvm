@@ -40,9 +40,9 @@ public class TestThread {
     //THREAD MONITORING
     private static class ThreadDemo1 extends Thread {
         public void run() {
+
             synchronized (Lock1) {
                 System.out.println("Thread 1: Holding lock 1...");
-
                 try {
                     Thread.sleep(10);
                 } catch (InterruptedException e) {
